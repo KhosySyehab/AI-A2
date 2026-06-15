@@ -1,0 +1,11 @@
+question_id,correctness,faithfulness,relevance,completeness,source_support,hallucination,reason
+Q01,5,5,5,5,5,5,"Jawaban sistem sangat akurat, mencakup semua detail yang diminta (jam, ruangan, dosen), dan sepenuhnya didukung oleh konteks yang tersedia."
+Q02,5,5,5,5,5,5,"Jawaban sistem sangat akurat, lengkap, dan sepenuhnya didukung oleh konteks pada jadwal hari Selasa sesi 13.00-15.30."
+Q03,5,5,5,5,5,5,"Jawaban sistem sangat akurat, mencakup semua poin yang diminta secara lengkap, dan sepenuhnya sesuai dengan konteks jadwal hari Kamis di Lab 902."
+Q04,5,5,5,5,5,5,"Jawaban sistem sangat akurat, sepenuhnya didukung oleh konteks, dan menjawab seluruh poin pertanyaan dengan tepat sesuai dengan referensi."
+Q05,5,5,5,5,5,5,"Jawaban sistem sangat akurat, mencakup seluruh poin ketentuan yang diminta sesuai dengan referensi dan konteks yang disediakan tanpa ada informasi yang dikarang."
+Q06,5,5,5,5,5,5,"Jawaban sistem sangat akurat, lengkap, dan sepenuhnya didukung oleh konteks serta referensi yang diberikan tanpa ada informasi tambahan yang mengarang."
+Q07,1,5,1,1,5,5,"Sistem dengan jujur menyatakan informasi tidak ditemukan karena konteks yang diberikan memang tidak mengandung jadwal kalender akademik, namun secara faktual gagal memberikan jawaban sesuai referensi."
+Q08,5,5,5,5,5,5,"Jawaban sistem sangat akurat, lengkap, dan sepenuhnya didukung oleh konteks yang diberikan, mencakup rincian SKS untuk kedua skenario IPS serta menyebutkan dasar hukum dan syarat persetujuan dosen wali."
+Q09,5,5,5,5,5,5,"Jawaban sistem sangat akurat, mencakup semua poin yang ditanyakan, dan sepenuhnya didukung oleh konteks serta sesuai dengan jawaban referensi."
+Q10,5,5,5,5,5,5,"Jawaban sistem sangat akurat, lengkap, dan seluruh datanya sesuai dengan tabel pada konteks [1] serta menjawab semua poin pertanyaan dengan tepat."

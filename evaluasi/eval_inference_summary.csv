@@ -1,0 +1,10 @@
+metrik,nilai
+retrieval_latency (s),83.641692
+generation_latency (s),8.177361
+e2e_latency (s),91.819164
+input_tokens (avg),3369.6
+output_tokens (avg),232.9
+total_tokens (avg),3602.5
+"throughput (tok/s, avg)",46.581942
+total_tokens (sum),36025.0
+est_cost_usd (sum),0.011918
