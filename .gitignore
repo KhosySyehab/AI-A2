@@ -1,0 +1,10 @@
+# Python virtual environment
+.venv/
+__pycache__/
+*.pyc
+
+# Local archives / bundles
+*.zip
+
+# RAGAS eval checkpoints (regenerated per run)
+ragas_scores_checkpoint.csv
