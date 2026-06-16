@@ -1,0 +1,79 @@
+﻿PRAKTIKUM MODUL 5
+MATA KULIAH KECERDASAN BUATAN DAN PEMBELAJARAN MESIN
+LAB KCKS
+
+
+KETENTUAN UMUM
+
+
+1. Praktikum dikerjakan secara BERKELOMPOK Pembagian Kelompok Modul 5.
+2. Pengerjaan praktikum sampai dengan hari Senin, 15 Juni pukul 23:59 WIB.
+3. Informasi tentang demo menyusul.
+4. File dataset bisa diakses di
+   1. Database Dokumen: database-modul5-ai.zip 
+   2. Questions Eval : banaspati_eval_questions.csv 
+5. Dokumentasi Gemini API dapat dicek melalui link berikut
+Gemini API | Google AI for Developers 
+Cara mendapatkan API Key dapat dicek melalui video berikut
+https://youtu.be/ZQb6p3oa-Ds?si=gSPPaf2qQ8bU1ziq 
+6. Submit notebook (cukup perwakilan kelompok) melalui Google Form (link menyusul).
+7. DIWAJIBKAN menambahkan sel markdown di tiap section notebook untuk menjelaskan alur berpikir, keputusan teknis, dan hasil analisis.
+
+
+
+
+________________
+
+
+SOAL
+BANASPATI (Bubur Panas Personal Assistant) pada dasarnya adalah chatbot yang dibuat khusus untuk melayani pelanggan kedai Bubur Panas IT. Kemampuannya sangat terbatas pada urusan menu dan operasional kedai. Masalahnya, pihak departemen sekarang ingin menggunakan BANASPATI untuk menjawab pertanyaan seputar akademik (kurikulum, jadwal, aturan kampus, dll). Karena background-nya cuma chatbot bubur, BANASPATI pasti kebingungan dan malah berhalusinasi kalau ditanya urusan kuliah. 
+Intinya, buatlah sistem berbasis Multimodal RAG agar dapat menjawab pertanyaan user secara akurat berdasarkan dokumen yang tersedia pada database. Praktikan diberikan kebebasan untuk mengeksplorasi pendekatan, framework, model, vector database, metode retrieval, metode multimodal, dan strategi evaluasi yang dianggap paling sesuai. Sistem dapat dibangun menggunakan framework atau library apa pun, selama seluruh keputusan teknis DAPAT DIJELASKAN dan DIBUKTIKAN melalui notebook.
+KETENTUAN PRAKTIKUM
+1. Sistem harus menjawab berdasarkan informasi dari dataset
+2. Jawaban tidak boleh berupa hardcode, mapping statis, atau jawaban manual.
+3. Praktikan dapat menggunakan model dengan ukuran maksimum 9B parameter. Praktikan diperbolehkan menggunakan API key maupun local SLM/LLM. 
+4. Sistem harus menampilkan konteks atau dokumen yang diretrieve sebelum jawaban diberikan ke model.
+5. Sistem harus mampu menyatakan bahwa informasi tidak ditemukan apabila konteks dari dataset tidak mencukupi.
+6. Praktikan wajib membangun konfigurasi sistem terbaik versi kelompoknya dan menjelaskan alasan pemilihan pendekatan tersebut.
+7. Praktikan wajib menunjukkan proses eksplorasi atau percobaan yang dilakukan, misalnya dari sisi pemrosesan dokumen, retrieval, model, prompt, multimodal processing, atau performa sistem.
+8. Penggunaan local/open-weight SLM/LLM akan menjadi nilai tambah apabila berhasil dijalankan, dievaluasi, dan dibandingkan dengan model berbasis API.
+9. Model berbasis API diperbolehkan, tetapi praktikan wajib mencantumkan nama model, provider, alasan pemilihan, parameter inferensi, estimasi biaya, dan hasil evaluasinya.
+10. Evaluasi sistem dibagi menjadi dua kelompok, yaitu metrik akurasi/kualitas dan metrik inferensi.
+11. Metrik akurasi/kualitas wajib mencakup evaluasi RAGAS dan LLM-as-a-Judge. 
+   1. Evaluasi RAGAS dapat mencakup faithfulness, answer/response relevancy, context precision, context recall, atau metrik lain yang relevan.
+   2. Evaluasi LLM-as-a-Judge wajib menggunakan Gemini 3 Flash melalui Google AI Studio dengan rubrik penilaian yang jelas, misalnya correctness, faithfulness, relevance, completeness, source support, dan hallucination detection.
+12. Metrik inferensi wajib mencakup: 
+   1. retrieval latency,
+   2. generation latency,
+   3. end-to-end latency,
+   4. token usage,
+   5. throughput atau tokens per second,
+   6. estimasi biaya penggunaan API apabila memakai model berbasis API,
+   7. penggunaan resource seperti RAM atau VRAM apabila memakai local SLM/LLM.
+        Jika sistem mendukung streaming output, praktikan juga wajib melaporkan TTFT (time to first token). Jika tidak mendukung streaming, praktikan wajib memberikan keterangan bahwa TTFT tidak tersedia dan menggantinya dengan generation latency/end-to-end latency. 
+13. Praktikan wajib menguji sistem menggunakan minimal 10 pertanyaan uji yang dapat dilihat pada “Questions Eval” di atas. 
+14. Notebook wajib menyediakan bagian semacam “Demo Sandbox” atau bagian setara yang dapat menerima pertanyaan baru dari penguji saat demo.
+15. Pada saat demo, asisten akan memberikan pertanyaan tambahan yang belum diketahui sebelumnya. Sistem harus menjalankan pipeline yang sama dan menampilkan:
+   1. pertanyaan dari asisten
+   2. jawaban akhir
+   3. konteks atau dokumen yang di retrieve
+   4. sumber konteks
+   5. konteks final yang dikirim ke model
+   6. metrik akurasi/kualitas yang relevan jika memungkinkan
+   7. metrik inferensi dasar seperti latency, token usage, dan throughput
+16. Notebook tidak boleh hanya berisi kode tanpa output. Setiap bagian utama harus memuat penjelasan singkat, output yang dapat diaudit, dan interpretasi hasil. 
+PARAMETER PENILAIAN
+1. Pemahaman masalah dan rancangan sistem RAG.
+2. Pemrosesan dokumen, multimodal processing, dan metadata sumber.
+3. Kualitas retrieval dan konteks yang digunakan.
+4. Kualitas jawaban dan grounding terhadap dataset.
+5. Evaluasi metrik akurasi/kualitas menggunakan RAGAS dan LLM-as-a-Judge.
+6. Evaluasi metrik inferensi, seperti latency, TTFT, throughput, token usage, estimasi biaya, dan penggunaan resource.
+7. Eksplorasi teknis dan alasan pemilihan konfigurasi terbaik.
+8. Analisis metrik, interpretasi hasil, dan pembahasan limitasi sistem. 
+
+
+Notes: Jika ada yang ingin ditanyakan terkait soal, silahkan langsung tanya di channel question di discord.
+
+
+Selamat Mengerjakan
